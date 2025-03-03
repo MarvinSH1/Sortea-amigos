@@ -5,7 +5,7 @@ function agregarAmigo() {
   //primero obtenemos el valor de la entrada en una variable
   let nombrePersona = document.getElementById("amigo").value;
   //Ahora debemos de validar que solo sean letras para el nombre
-  let soloLetras = /^[A-Za-z]+$/;
+  let soloLetras = /^[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+$/;
 
   //checamos si solo son letras...
   if (soloLetras.test(nombrePersona)) {
